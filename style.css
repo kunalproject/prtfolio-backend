@@ -1,0 +1,547 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: "Be Vietnam Pro", sans-serif;
+}
+#wrapper{
+    margin: 25px;
+    
+   
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+#name img{
+width: 4rem;
+margin-right: -1.1rem;
+
+
+}
+#myChart{
+    margin-left: 25%;
+}
+#navbars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+#side-bar,
+#side-close{
+    display: none;
+    cursor: pointer;
+}
+
+#name{
+    display: flex;
+    justify-content: baseline;
+        align-items: center;
+        /* position: relative; */
+        font-weight: 700;
+        font-size: 2.5rem;
+}
+#nav-items{
+    display: flex;
+    flex-direction: row;
+margin-left: 70%;
+gap: 2rem;
+
+}
+
+.nav-style a{
+    text-decoration: none;
+        color: black;        
+        transition: all 0.8s linear ;        
+}
+.nav-style a:hover{
+font-weight: bold;
+}
+#main{
+    position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        gap: 5rem;
+        margin: 4rem auto;
+        padding: 0 1rem;
+        padding-bottom: 8rem;
+    
+}
+#main-left{
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 2rem;
+}
+#faded{
+        position: absolute;
+            user-select: none;
+            font-size: 5em;
+            color: rgb(231, 231, 231);
+        
+            bottom: -16%;
+            left: 2%;
+            font-weight: bold;
+}
+.role {
+    color: #4e45d5;
+    font-weight: 800;
+}
+.main-heading{
+        font-size: 40px;
+            color: #343d68;
+            font-weight: 500;
+}
+.sub-heading{
+    margin-top: 1rem;
+        width: 70%;
+        font-weight: 500;
+}
+#my-img img{
+    width: 8rem;
+    height: 8rem;
+       
+    object-fit: cover;
+    object-position: 65% 50%;
+    border-radius: 50%;
+    
+    
+
+#main-right{
+    position: relative;
+}
+   
+}
+/* #my-img{
+    
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+    margin-right: 15%;
+    position: relative;
+    right: 10%;
+   
+
+    box-shadow: 0 0 1em black;
+} */
+#hire-btn{
+    position: absolute;
+    right: 25%;
+    top: 150%;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.btn-pink {
+
+
+    background-color:red;
+    width: fit-content;
+    color: white;
+    padding: 0.8rem 2.3rem;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 500;
+    border: solid 3px transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-pink::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+}
+
+.btn-pink:hover::before {
+    transform: scaleX(1);
+}
+
+.btn-pink:hover {
+    border: solid 3px var(--bgOrange);
+    color: black;
+}
+#main-right{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#skill-slider{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#slide-container {
+    width: 75%;
+    /* height: 200px; */
+    margin: 10px;
+
+  
+
+    position: relative;
+
+}
+
+.slide {
+    position: relative;
+
+    display: none;
+    border: 1px solid black;
+    
+
+}
+
+.slide img {
+    
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    
+    object-position: top;
+
+}
+
+.arrow {
+    position: absolute;
+    top: 55%;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 8px 19px;
+    font-size: 20px;
+
+}
+
+#prev {
+    left: 5px;
+}
+
+#next {
+    right: 5px;
+}
+.caption {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px 0px;
+
+
+}
+#skill-heading{
+    text-align: center;
+}
+#project-heading{
+text-align: center;
+margin: 3%;
+}
+#project-cart{
+    display: grid;
+    gap: 2rem;
+  
+    grid-template-columns: repeat(3,1fr);
+}
+.project-box{
+height: 23rem;
+
+border-radius: 10%;
+display: grid;
+grid-template-rows: repeat(3,1fr);
+border: 1px solid black;
+
+}
+.project-card-image{
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+    object-fit: cover;
+    
+
+}
+.project-card-image img{
+    width: 100%;
+    height: 250px;
+    border-radius: 12%;
+}
+.project-card-text{
+    overflow: auto;
+    margin: 3%;
+}
+.project-card-text::-webkit-scrollbar{
+    display: none;
+}
+#projet-section{
+    margin: 1%;
+}
+#mail-contact{
+    margin: 2rem;
+}
+#mail-contact img{
+width: 2rem;
+}
+#mail-contact p{
+    display: inline-block;
+   font-size: 2rem;
+}
+#contact-heading{
+    text-align: center;
+}
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#dsa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#navbar{
+    margin-right: 100px;
+}
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+footer{
+    text-align: center;
+    background-color: #343d68;
+    color: white;
+    margin-bottom: 2%;
+}
+
+
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    *{
+        margin: 0.1rem;
+        
+    }
+        #navbars {
+            display: flex;
+            flex-direction: row;
+    
+        }
+        #nav-items{
+            display: none;
+        }
+    
+        #side-bar {
+            display: block;
+    
+        }
+    
+        #side-close {
+            display: none;
+    
+        }
+    
+        #side-bar img,
+        #side-close img {
+            width: 3rem;
+            margin-right: 1rem;
+        }
+    #wrapper {
+        margin: 10px;
+    }
+    #skill-section{
+        margin-top: -8rem;
+        width: 100vw;
+        margin-right: 15%;
+    }
+    .caption{
+        font-size:1.2rem;
+    }
+
+    /* .slide img{
+        
+       object-fit: cover;
+       object-position: top;
+       object-position: 40%;
+        
+    } */
+
+    #main {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #name {
+        font-size: 2rem;
+    }
+    #main-text{
+        font-size: 1rem;
+    }
+
+
+    #nav-items div{
+        margin-bottom: 3rem;
+    }
+    #my-img{
+        width: 20px;
+        margin-left: 30%;
+    }
+    #faded{
+
+        display: none;
+    }
+
+    #main-left,
+    #main-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    #hire-btn {
+        position: static;
+        margin-top: 1rem;
+        margin-left: 8rem;
+        margin-bottom: -15rem;
+        text-decoration: none;
+
+    }
+
+    #skill-slider {
+        width: 90%;
+    }
+
+    #project-cart {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .project-box {
+        height: auto;
+    }
+                #side-bar img,
+                #side-close img {
+                    width: 3rem;
+                    margin-right: 1rem;
+                }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    #name {
+        font-size: 1.5rem;
+    }
+    #navbars{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    #side-bar{
+        display: block;
+
+    }
+    #side-close{
+        display: none;
+    
+}
+    #side-bar img ,
+    #side-close img{
+        width: 3rem;
+        margin-right: 1rem;
+    }
+    #nav-items{
+
+        display: none;    
+    }
+    /* #nav-items div{
+        gap: 3rem;
+    } */
+
+    .sub-heading {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    #skill-heading,
+    #project-heading,
+    #contact-heading {
+        font-size: 1.5rem;
+    }
+
+    .btn-pink {
+        padding: 0.5rem 1.5rem;
+        font-size: 16px;
+    }
+
+    #project-cart {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        
+    }
+
+    #project-section .project-box {
+        padding: 1rem;
+        grid-template-rows: 1fr;
+    }
+
+    #my-img img {
+        width: 10rem;
+        height: 10rem;
+    }
+    #myChart{
+        margin-left: 0;
+    }
+    footer {
+        font-size: 0.8rem;
+        padding: 1rem;
+       
+    }
+}
+
